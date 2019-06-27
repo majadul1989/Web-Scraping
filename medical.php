@@ -33,9 +33,9 @@ for($i = 1; $i <= 14; $i++ ){
            $hospitalName = trim(preg_replace('/\s+/', ' ', $row->nodeValue));
            $hospitalAddress = trim(preg_replace('/\s+/', ' ', $medicale_address[$k]->nodeValue));
 
-           $sql = "INSERT INTO `hospital` (`hospital_name`, `hospital_address`, `web`, `hospital_logo`, `hospital_pad_design`, `hospital_status`, `description`, `added_by`, `updated_by`, `created_at`, `updated_at`) VALUES ( '$hospitalName', '$hospitalAddress', '$hospitalWeb', '---', 'default', 'Active', '---', 1, 1, NOW(), NOW())";
+//            $sql = "INSERT INTO `hospital` (`hospital_name`, `hospital_address`, `web`, `hospital_logo`, `hospital_pad_design`, `hospital_status`, `description`, `added_by`, `updated_by`, `created_at`, `updated_at`) VALUES ( '$hospitalName', '$hospitalAddress', '$hospitalWeb', '---', 'default', 'Active', '---', 1, 1, NOW(), NOW())";
 
-            $conn->query($sql); 
+//             $conn->query($sql); 
 
 
         }
